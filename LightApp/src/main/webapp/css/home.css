@@ -1,0 +1,242 @@
+@charset "UTF-8";
+.main-content .primary-content h1{
+    font-family: poppins;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.main-content .paragraph{
+    font-family: poppins;
+    margin-top: 20px;
+
+}
+
+.head{
+    display: flex;
+    padding: 50px 150px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+
+.head .image img{
+    width: 500px;
+}
+
+.button ul{
+    margin-top: 20px;
+    display: flex;
+    gap: 6px;
+}
+
+.button #login{
+    display: inline;
+    border: 1px solid black;
+    padding: 6px 16px;
+    border-radius: 4px;
+}
+.button #signup{
+    display: inline;
+    border: 1px solid black;
+    padding: 6px 16px;
+    border-radius: 4px;
+}
+.button #signup i{
+    padding-left: 3px;
+}
+
+/* end of main header senction */
+
+.secondary{
+    padding: 50px 150px;
+}
+
+.secondary #paragraph{
+    font-family: poppins;
+    text-align: center;
+    font-size: 20px;
+}
+.img img{
+    width: 43px;
+  
+}
+.content{
+    display: flex;
+    align-items: center;
+}
+.content #ambbar{
+    font-family: poppins;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin-top: 10px;
+}
+
+/* starting of secondary heading css */
+
+.feature{
+    margin-top: 40px;
+    display: flex;
+    padding: 0px 150px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feature .secondary-heading{
+    font-family: poppins;
+    max-width: 400px;
+    margin-right: 50px;
+
+}
+
+.secondary-sec-heading{
+    font-family: poppins;
+}
+
+.secondary-third-heading{
+    font-family: poppins;
+
+}
+
+.secondary-heading h3{
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.secondary-heading button{
+    font-family: poppins;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+
+}
+
+.secondary-sec-heading i{
+
+    background-color: yellow;
+    padding: 11px 12px;
+    font-size: 20px;
+    border-radius: 50%;
+
+}
+
+.secondary-sec-heading .secondary-text h3{
+    font-weight: 500;
+    font-size: 20px;
+
+}
+.secondary-sec-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.secondary-text{
+    max-width: 450px;
+    padding-top:10px;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3), 0 4px 20px rgba(169, 169, 169, 0.5);
+}
+
+.secondary-third-heading i{
+    background-color: yellow;
+    padding: 11px 12px;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.secondary-third-heading h3{
+    font-family: poppins;
+    font-weight: 500;
+}
+
+.secondary-third-first{
+    max-width: 450px;
+    padding-top:10px;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3), 0 4px 20px rgba(169, 169, 169, 0.5);
+}
+
+.secondary-third-secondary{
+    margin-top: 20px;
+    max-width: 450px;
+    padding-top:10px;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3), 0 4px 20px rgba(169, 169, 169, 0.5);
+}
+.secondary-third-heading{
+    margin-left: 20px;
+}
+/* starting of product feature */
+.product-feature{
+    font-family: poppins;
+    margin-top: 20px;
+    padding: 0px 150px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+
+}
+.tandem{
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3), 0 4px 20px rgba(169, 169, 169, 0.5);
+
+}
+.tandem img{
+    width: 200px;
+}
+
+.product-feature button{
+    font-family: poppins;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.tandem-text{
+    margin-left: 20px;
+}
+
+.tandem-text h3{
+    font-family: poppins;
+    font-weight: 500;
+    font-size: 17px;
+
+}
+
+.brand-text h3{
+    padding: 0px 150px;
+    font-family: poppins;
+    font-weight: 500;
+    font-size: 30px;
+
+}

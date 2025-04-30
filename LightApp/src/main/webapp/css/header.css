@@ -1,0 +1,103 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: none;
+    font-family: poppins;
+    color: black;
+    font-size: 14px;
+}
+li{
+    list-style: none;
+}
+
+.navigation{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    background-color: white;
+
+    
+}
+
+.navigation .logo img{
+    width: 70px;
+}
+
+.navigation .logo .lightApp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation .logo p{
+    font-family:cursive;
+    font-weight:800;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+
+}
+.navigation .logo{
+    display: flex;
+
+}
+
+.nav .list {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    padding-top: 12px;
+
+}
+.nav .list li a{
+    font-weight: 500;
+}
+
+.user-profile{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-top: 12px;
+}
+.user-profile ul{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+}
+
+.user-profile a i{ 
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 4px 5px;
+    margin-right: 5px;
+    
+}
+
+.user-profile a{
+    font-weight:400;
+}
+
+.user-profile ul #login{
+    border: 1px solid rgb(243, 245, 159);
+    padding: 4px 14px;
+    background-color: rgb(243, 245, 159);
+    border-radius: 5px;
+}
+
+.user-profile ul #signup{
+    border: 1px solid rgb(243, 245, 159);
+    padding: 4px 14px;
+    background-color: rgb(243, 245, 159);
+    border-radius: 5px;
+}
