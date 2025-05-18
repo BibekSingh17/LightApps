@@ -1,0 +1,250 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-family: poppins;
+    font-size: 14px;
+}
+li{
+    list-style: none;
+}
+/* top bar css start */
+.navigation{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    background-color: white;
+
+    
+}
+
+.navigation .logo img{
+    width: 70px;
+}
+.navigation .logo .lightApp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navigation .logo p{
+    font-family:cursive;
+    font-weight:800;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.navigation .logo{
+    display: flex;
+
+}
+
+.nav .list {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    padding-top: 12px;
+
+}
+
+.nav .list li a{
+    font-weight: 500;
+}
+.admin-profile{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-top: 12px;
+}
+
+.admin-profile a i{ 
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 4px 5px;
+    margin-right: 5px;
+    
+}
+.admin-profile a{
+    font-weight:400;
+}
+
+.admin-profile form button{
+    font-family: poppins;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    font-weight: 400;
+}
+/* top bar end */
+
+
+
+
+/* insight css start */
+.insight{
+    margin-top: 50px;
+    padding: 20px 110px;
+}
+
+.heading{
+    font-family: poppins;
+    font-weight: 500;
+    font-size: 30px;
+    padding-left: 14px;
+
+}
+
+.data-insight{
+    display: flex;
+    justify-content: center;
+}
+
+.data-insight .sale{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3), 0 4px 20px rgba(169, 169, 169, 0.5);
+    border-radius: 10px;
+}
+
+.data-insight .sale p{
+    font-family: poppins;
+    font-size: 18px;
+}
+.data-insight .sale h3{
+    font-family:poppins;
+    font-size: 20px;
+    font-weight: 400;
+}
+.sale img{
+    width: 80px;
+}
+
+/* end of insight css */
+
+/* starting of customer informatinon */
+
+.customer-information , .Product-information{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 122px;
+    margin-right: 40px;
+
+}
+
+.Product-info-heading h4, .customer-info-heading h4{
+    font-family: poppins;
+    font-weight:400;
+    font-size: 18px;
+    margin-bottom: 10px;
+
+}
+
+.heading-customer-info,
+.heading-customer-data
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 6 equal columns */
+    text-align: left;
+    font-family: Poppins;
+    font-size: 14px;
+    margin-bottom: 8px;
+    padding-left: 5px;
+}
+.heading-product-data, .heading-product-info {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 6 equal columns */
+    text-align: left;
+    font-family: Poppins;
+    font-size: 14px;
+    margin-bottom: 8px;
+    padding-left: 5px;
+}
+.heading-product-info, .heading-customer-info{
+    margin-bottom: 10px;
+    font-weight:500;
+    font-size: 15px;
+
+}
+
+.heading-product-info{
+    background-color: rgb(144, 227, 248);
+    border-radius: 2px;
+
+}
+
+.heading-customer-info{
+    background-color: rgb(162, 162, 248);
+}
+
+.container-customer-product{
+    width: 73%;
+}
+
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+
+}
+/* css of low stock */
+.low-stock-data{
+    font-family: poppins;
+    margin-top: 42px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3), 0 4px 20px rgba(169, 169, 169, 0.5);
+    border-radius: 10px;
+
+}
+
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 10px;
+
+
+}
+.Outer-heading h2{
+    font-size: 26px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    color: rgb(6, 6, 78);
+}
+
+#h-name{
+    font-size: 15px;
+}
+#p-name{
+    font-size: 10px;
+
+}
+
+#h-left-name{
+    font-size: 13px;
+    color: red;
+}
+#p-left-name{
+    font-size:10px;
+}
+.left-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+

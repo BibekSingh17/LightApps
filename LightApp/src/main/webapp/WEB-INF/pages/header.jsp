@@ -19,16 +19,16 @@
 
         <div class="nav">
             <ul class="list">
-                <li><a class="nav-text" href="#">Home</a></li>
-                <li><a class="nav-text" href="">Product</a></li>
-                <li><a class="nav-text" href="#">Blog</a></li>
-                <li><a class="nav-text" href="#">Contact us</a></li>
+                <li><a class="nav-text" href="${pageContext.request.contextPath}/home">Home</a></li>
+                <li><a class="nav-text" href="${pageContext.request.contextPath}/ProductController">Product</a></li>
+                <li><a class="nav-text" href="${pageContext.request.contextPath}/Blog">Blog</a></li>
+                <li><a class="nav-text" href="${pageContext.request.contextPath}/Contact">Contact us</a></li>
             </ul>
 
         </div>
 
         <div class="user-profile">
-            <a class="nav-text" href="#"><i class="fa-solid fa-user"></i>Profile</a>
+            <a class="nav-text" href="${pageContext.request.contextPath}/UserProfile"><i class="fa-solid fa-user"></i>Profile</a>
             <ul>
                 <li id="login"><a href="${pageContext.request.contextPath}/login">Login</a></li>
                 <li id="signup"><a href="${pageContext.request.contextPath}/register">Sign up</a></li>

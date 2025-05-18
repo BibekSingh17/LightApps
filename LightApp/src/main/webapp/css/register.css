@@ -99,3 +99,19 @@ input {
     margin-top: 3px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.field-error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+.error-message {
+    background-color: #f8d7da; /* light red background */
+    color: #721c24;           /* dark red text */
+    border: 1px solid #f5c6cb; /* red border */
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}

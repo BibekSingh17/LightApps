@@ -83,3 +83,17 @@ h2 {
 .links a:hover {
     text-decoration: underline;
 }
+
+.error-message {
+    color: #f44336; /* Red background for error */
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.input-group input:invalid {
+    border-color: #f44336;
+}

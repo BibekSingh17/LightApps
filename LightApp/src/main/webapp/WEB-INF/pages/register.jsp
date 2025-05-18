@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,51 +21,60 @@
                 <h2 id="reg-text">Registration</h2>
                 <div id="box"></div>
             </div>
+            
+            <!-- Display Error Message -->
+            <c:if test="${not empty error}">
+                <div class="error-message">
+                    <p>${error}</p>
+                </div>
+            </c:if>
+
+
             <form action="register" method="post">
                 <div class="reg-content">
 
                     <div class="fl-container">
                         <label for="f-name" class="registration-text" >First Name</label>
-                        <input id="f-name" name="firstname" type="text" required>
+                        <input id="f-name" name="firstname" type="text" value="${firstName}" required>
     
                         <label for="l-name" class="registration-text" >Last Name</label>
-                        <input id="l-name" name="lastname" type="text" required>
+                        <input id="l-name" name="lastname" type="text" value="${lastName}" required>
                     </div>
 
                     <div class="ep-container">
                         <label for="email" class="registration-text" >Email</label>
-                        <input id="email" name="email" type="email" required>
+                        <input id="email" name="email" type="email" value="${email}" required>
     
                         <label for="p-number" class="registration-text">Phone Number</label>
-                        <input id="p-number" name="phonenumber" type="number" required>
+                        <input id="p-number" name="phonenumber" type="number" value="${phonenumber}" required>
                     </div>
 
                     <div class="ag-container">
                         <label for="address" class="registration-text">Address</label>
-                        <input id="address" name="address" type="text" required>
+                        <input id="address" name="address" type="text" value="${address}" required>
     
                         <label for="gender" class="registration-text" >Gender</label>
-                        <input id="gender" name="gender" type="text" required>
+                        <input id="gender" name="gender" type="text" value="${gender}" required>
                     </div>
 
 
                     <div class="up-container">
                         <label for="username" class="registration-text" >Username</label>
-                        <input id="username" name="username" type="text" required>
+                        <input id="username" name="username" type="text" value="${username}" required>
                         
                         <label for="password" class="registration-text" >Password</label>
-                        <input id="password" name="password" type="password" required>
+                        <input id="password" name="password" type="password" value="${password}" required>
                     </div>
 
                     <div class="confirm-c">
                         <label for="c-password" class="registration-text" >Confirm Password</label>
-                        <input id="c-password" name="confirmpassword" type="password" required>
+                        <input id="c-password" name="confirmpassword" type="password" value="${error}" required>
 
                     </div>
 
                     <div class="user-role">
                         <label for="user-role" class="registration-text" >User Role</label>
-                        <input id="user-role" name="userrole" type="text" required>
+                        <input id="user-role" name="userrole" type="text" value="${userrole}" required>
                     </div>
 
                 </div>

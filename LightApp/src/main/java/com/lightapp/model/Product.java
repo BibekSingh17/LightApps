@@ -10,9 +10,11 @@ public class Product {
 	private int sellingPrice;
 	private int costPrice;
 	
+	
 	public Product() {
 		
 	}
+	
 	
 	public Product(int productID, String productName, String brand, int modelNumber, String category, int sellingPrice, int costPrice) {
 		
@@ -52,7 +54,7 @@ public class Product {
     }
     
     // setter method of brand
-    public void setBrandr(String brand) {
+    public void setBrand(String brand) {
     	this.brand = brand;
     }
     

@@ -35,8 +35,6 @@ public class RegisterController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
 		request.getRequestDispatcher("/WEB-INF/pages/register.jsp").forward(request, response);
 	}
 
@@ -132,40 +130,40 @@ public class RegisterController extends HttpServlet {
 		// checking for null or empty fields 
 		
 		if (ValidationUtil.isNullOrEmpty(firstName))
-			return "First Name is required. baby";
+			return "First Name is required.";
 		
 		if (ValidationUtil.isNullOrEmpty(lastName))
-			return "Last Name is required. baby";
+			return "Last Name is required.";
 		
 		if (ValidationUtil.isNullOrEmpty(email))
-			return "email is required. baby";
+			return "email is required.";
 		
 		if (ValidationUtil.isNullOrEmpty(phoneNumber))
-			return "Phone number is required. baby";
+			return "Phone number is required.";
 		
 		
 		if (ValidationUtil.isNullOrEmpty(address))
-			return "Address is required. baby";
+			return "Address is required.";
 	
 		
 		if (ValidationUtil.isNullOrEmpty(gender))
-			return "Gender is required. baby";
+			return "Gender is required.";
 	
 		
 		if (ValidationUtil.isNullOrEmpty(userName))
-			return "Username is required. baby";
+			return "Username is required.";
 	
 		
 		if (ValidationUtil.isNullOrEmpty(password))
-			return "Password is required. baby";
+			return "Password is required.";
 	
 		
 		if (ValidationUtil.isNullOrEmpty(confirmPassword))
-			return " Re-type password is required. baby";
+			return " Re-type password is required.";
 	
 		
 		if (ValidationUtil.isNullOrEmpty(userRole))
-			return "User Role is required. baby";
+			return "User Role is required.";
 	
 		
 		// doing validation of fields
@@ -183,6 +181,10 @@ public class RegisterController extends HttpServlet {
 		
 		if (!ValidationUtil.isValidPassword(password))
 			return "password must be at least 8 digit, contain uppercase, number, symbol";
+		
+
+		if (!ValidationUtil.isValidPhoneNumber(phoneNumber))
+			return "Phone number must start with 98 and be exactly 10 digits.";
 
 		return null; // all validation passed bro...
 		
@@ -203,6 +205,7 @@ public class RegisterController extends HttpServlet {
 			req.setAttribute("password", req.getParameter("password"));
 			req.setAttribute("userrole", req.getParameter("userrole"));
 			
+			req.getRequestDispatcher("/WEB-INF/pages/register.jsp").forward(req, resp);
 		
 	}
 	
@@ -211,7 +214,7 @@ public class RegisterController extends HttpServlet {
 //		req.setAttribute("success", message);
 //		req.getRequestDispatcher(redirectPage).forward(req, resp);
 //	}
-	
+
 	
 
 }

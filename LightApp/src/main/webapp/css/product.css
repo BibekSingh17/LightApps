@@ -1,0 +1,339 @@
+@charset "UTF-8";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-family: poppins;
+    color: black;
+    font-size: 14px;
+}
+li{
+    list-style: none;
+}
+
+.navigation{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    background-color: white;
+
+    
+}
+
+.navigation .logo img{
+    width: 70px;
+}
+
+.navigation .logo .lightApp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation .logo p{
+    font-family:cursive;
+    font-weight:800;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+
+}
+.navigation .logo{
+    display: flex;
+
+}
+
+.nav .list {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    padding-top: 12px;
+
+}
+.nav .list li a{
+    font-weight: 500;
+}
+
+.user-profile{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-top: 12px;
+}
+.user-profile ul{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+}
+
+.user-profile a i{ 
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 4px 5px;
+    margin-right: 5px;
+    
+}
+
+.user-profile a{
+    font-weight:400;
+}
+
+.user-profile ul #login{
+    border: 1px solid rgb(243, 245, 159);
+    padding: 4px 14px;
+    background-color: rgb(243, 245, 159);
+    border-radius: 5px;
+}
+
+.user-profile ul #signup{
+    border: 1px solid rgb(243, 245, 159);
+    padding: 4px 14px;
+    background-color: rgb(243, 245, 159);
+    border-radius: 5px;
+}
+
+/* end of header css */
+
+
+.product-feature{
+    font-family: poppins;
+    margin-top: 20px;
+    padding: 0px 150px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.tandem{
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3), 0 4px 20px rgba(169, 169, 169, 0.5);
+
+}
+.tandem img{
+    width: 200px;
+}
+
+.product-feature button{
+    font-family: poppins;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.tandem-text{
+    margin-left: 20px;
+}
+
+.tandem-text h3{
+    font-family: poppins;
+    font-weight: 500;
+    font-size: 17px;
+
+}
+
+.brand-text h3{
+    padding: 0px 150px;
+    font-family: poppins;
+    font-weight: 500;
+    font-size: 30px;
+
+}
+
+/* css of product div */
+.product{
+    font-family: poppins;
+    margin-top: 20px;
+    padding: 0px 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.street-light{
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3), 0 4px 20px rgba(169, 169, 169, 0.5);
+
+}
+
+.street-light img{
+    width: 200px;
+}
+
+.street-light-text .button a{
+    font-family: poppins;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.button{
+    margin: 20px 20px;
+}
+
+
+.street-light-text h3{
+    font-family: poppins;
+    font-weight: 500;
+    font-size: 17px;
+    padding-left: 21px;
+
+}
+.shop-by-brand h3{
+    font-family: poppins;
+    font-size: 30px;
+    font-weight: 500;
+    padding-left: 150px;
+    padding-top: 60px;
+
+
+}
+
+/* Animation Definitions */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Apply Animations */
+
+.navigation {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.tandem,
+.street-light {
+  animation: fadeInUp 1s ease-in-out;
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tandem:hover,
+.street-light:hover {
+  animation: pulse 0.6s ease-in-out;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.button a {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button a:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+img {
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+.price {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #ff5722;
+    font-size: 15px;
+    margin: 8px 0 12px 21px;
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: black;
+  cursor: pointer;
+  padding: 4px 14px;
+  border: 1px solid rgb(243, 245, 159);
+  background-color: rgb(243, 245, 159);
+  border-radius: 5px;
+}
+.logout-btn:hover {
+  background-color: #f0f0a0;
+}
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+
+}
+
+.search-form input {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+.search-form button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+  background-color: #333;
+}
